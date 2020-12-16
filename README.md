@@ -20,6 +20,9 @@ python -m pytest tests/
 
 
 ## CI Pipeline
+1. Navigate to Jenkins
+2. Configure the job.
+3. Add the following commands to the
 Testing 1    
 Testing 2    
 Testing 3 - checking failures are not pushed to main
