@@ -22,7 +22,17 @@ python -m pytest tests/
 ## CI Pipeline
 1. Navigate to Jenkins
 2. Configure the job.
-3. Add the following commands to the
+3. Add the following commands to the build step
+```bash
+sudo apt-get update
+# Install python pip module
+sudo apt-get install python3-pip -y
+# Install pytest
+pip3 install -U pytest
+# Install BeautifulSoup4
+sudo pip3 install BeautifulSoup4
+```
+
 Testing 1    
 Testing 2    
 Testing 3 - checking failures are not pushed to main
