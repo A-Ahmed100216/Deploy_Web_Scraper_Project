@@ -38,8 +38,8 @@ class CmdUserInterface:
 
     def manage_get_ITJW_top_30_menu(self):
         print('Please select from the below menu options\n')
-        print('1. Print top 30 to downloads folder with default name (No Headers)')
-        print('2. Print top 30 to downloads folder with default name (with Headers)')
+        print('1. Print top 30 to local folder with default name (No Headers)')
+        print('2. Print top 30 to local folder with default name (with Headers)')
         print('3. Return to Main Menu')
         print('or type exit to quit program\n')
         print('Please select option:\n')
@@ -52,11 +52,11 @@ class CmdUserInterface:
             self.manage_get_ITJW_top_30_menu()
         elif int(option_selected) == 1:
             Top30CSVGenerator().generate_top_30_csv(ItJobsWatchHomePageTop30(itjobswatch_home_page_url()).get_top_30_table_elements_into_array())
-            print('Please check your downloads folder')
+            print('Please check your vagrant folder')
             self.manage_get_ITJW_top_30_menu()
         elif int(option_selected) == 2:
             top_30 = ItJobsWatchHomePageTop30(itjobswatch_home_page_url())
-            Top30CSVGenerator().generate_top_30_csv(top_30.get_top_30_table_elements_into_array(), os.path.expanduser('~/Downloads/'), 'ItJobsWatchTop30.csv', top_30.get_table_headers_array())
+            Top30CSVGenerator().generate_top_30_csv(top_30.get_top_30_table_elements_into_array(), os.path.expanduser('~/'), 'ItJobsWatchTop30.csv', top_30.get_table_headers_array())
         elif int(option_selected) == 3:
             self.menu_control()
         else:

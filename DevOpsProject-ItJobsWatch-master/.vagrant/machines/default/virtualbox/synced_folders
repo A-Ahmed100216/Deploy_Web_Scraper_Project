@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/ubuntu/":{"guestpath":"/home/ubuntu","hostpath":"/Users/aminahahmed/AWS/deploy_web_scraper/DevOpsProject-ItJobsWatch-master","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/aminahahmed/AWS/deploy_web_scraper/DevOpsProject-ItJobsWatch-master","disabled":false,"__vagrantfile":true}}}

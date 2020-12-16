@@ -17,3 +17,7 @@ python -m pytest tests/
 ```
 4. The following output should be displayed
 ![local tests](images/local_tests.png)
+
+
+## CI Pipeline
+Testing 1 
