@@ -20,4 +20,5 @@ python -m pytest tests/
 
 
 ## CI Pipeline
-Testing 1 
+Testing 1
+Testing 2
