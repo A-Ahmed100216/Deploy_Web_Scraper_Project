@@ -20,5 +20,6 @@ python -m pytest tests/
 
 
 ## CI Pipeline
-Testing 1
-Testing 2
+Testing 1  
+Testing 2  
+Testing 3 - checking failures not pushed to main 
