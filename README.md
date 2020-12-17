@@ -155,4 +155,5 @@ ansible-vault create file.yml
 
 ```
 ### Tests
-Testing CD Pipeline
+* Testing CD Pipeline   
+* Testing CD pipeline 2
