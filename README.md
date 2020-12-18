@@ -86,7 +86,6 @@ Testing 3 - checking failures are not pushed to main
 ```
 
 ### Ansible EC2 Creation
-1.
 2. Create the following directory called group_vars/all
 3. Create an Ansible Vault in this location using the following command:
 ```yaml
@@ -152,13 +151,18 @@ ansible-vault create file.yml
           Name: eng74-aminah-scraper-ec2
 
   tags: ['never','create_ec2']
-
 ```
+3. Run the following commands
+```
+ansible-playbook create_ec2.yml --ask-vault-pass --tags create_ec2
+```
+
 ### Tests
 * Testing CD pipeline   
 * Testing CD pipeline 2
 * Testing CD pipline 3 - new instance
 * Testing CD pipeline 4
+* Testing cd pipeline 5 - addition of flask files 
 
 
 ## Flask
