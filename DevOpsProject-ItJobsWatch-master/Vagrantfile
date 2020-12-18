@@ -10,12 +10,8 @@ Vagrant.configure("2") do |config|
   # config.vm.network "forwarded_port", guest: 5000, host: 5000
   config.hostsupdater.aliases = ["development.local"]
   # Sync the app folder(not copying in, syncing so is we make changes in the vm, reflected here too)
-  # config.vm.synced_folder"path/to/origin/folder", "path to destination"
   config.vm.synced_folder"/Users/aminahahmed/AWS/deploy_web_scraper/DevOpsProject-ItJobsWatch-master", "/home/ubuntu/"
   config.vm.provision "shell", path: "provision.sh"
 
-
-  # Run the provision script
-  #config.vm.provision "shell",path: "environment/provision.sh"
 
 end

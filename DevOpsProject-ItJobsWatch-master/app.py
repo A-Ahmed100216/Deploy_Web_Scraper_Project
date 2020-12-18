@@ -7,14 +7,6 @@ import pandas
 app = Flask(__name__)
 
 
-
-# localhost:5000 this is the default port for Flask
-# @app.route("/")
-# def login():
-#     return render_template("home.html")
-
-
-
 @app.route('/')
 def jobs():
     filename = '/home/vagrant/ItJobsWatchTop30.csv'
