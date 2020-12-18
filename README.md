@@ -159,3 +159,33 @@ ansible-vault create file.yml
 * Testing CD pipeline 2
 * Testing CD pipline 3 - new instance
 * Testing CD pipeline 4
+
+
+## Flask
+### Run on local hosts
+1. Create an app.py file
+2. Create a templates folder and store a base.html file and home.html file here.
+3. Instal flask and any other dependencies such as pandas
+4. Run flask using the command
+```bash
+flask run
+```
+5. Once confirmed the app is running as expected on the local host, navigate to the development environment.
+
+### Run on Dev Env
+1. Copy relevant flask files, this will include the app.py file, the templates folder and static folder.
+2. Run `vagrant up` and `vagrant ssh`
+3. Navigate to location of app folders
+4. Install flask and pandas
+```bash
+pip3 install flask
+sudo apt install python3-flask -y
+```
+5. Amend the app.py file to set host='0.0.0.0' to allow all incoming connections. If these repo has been cloned, this step is not necessary.
+6. Run main.py to download a csv file of ItJobsWatch, ensure the location matches the location specifed in app.py
+7. Run the following command
+
+```bash
+flask run --host=192.168.10.100
+```     
+![dev_env_homepage](images/running_dev.png)

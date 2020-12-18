@@ -1,0 +1,18 @@
+body {
+  font-family: verdana;
+  background-color: #d5f4e6;
+}
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;}
+
+
+input {
+  background: none;
+  font-family: courier;
+  font-size: 1.1em;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
